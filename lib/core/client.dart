@@ -1,10 +1,12 @@
 import 'package:dio/dio.dart';
+import 'package:exam_6/core/interceptor.dart';
 
 import '../data/models/create_user_model.dart';
 
 class ApiClient {
   ApiClient(){
     dio = Dio(BaseOptions(baseUrl: "http://192.168.26.146:8888/api/v1",validateStatus: (value)=>true));
+    dio.interceptors.add(AuthInterceptor());
   }
   late final Dio dio;
 

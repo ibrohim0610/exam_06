@@ -15,7 +15,8 @@ import 'package:go_router/go_router.dart';
 import '../../main.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: Routes.home,
+  initialLocation: Routes.home
+  ,
   navigatorKey: navigatorKey,
   routes: [
     GoRoute(

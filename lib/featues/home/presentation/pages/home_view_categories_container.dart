@@ -16,7 +16,7 @@ class HomeViewCategoriesContainer extends StatelessWidget {
       padding: EdgeInsets.only(top: 20.h, left: 20.h, right: 20.h, bottom: 10.h),
       width: double.infinity,
       height: 407.h,
-      color: Color(0x0ffbf2f4).withValues(alpha: 0.3),
+      color: Color(0xfffbf2f4).withValues(alpha: 0.3),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -74,18 +74,7 @@ class HomeViewCategoriesContainer extends StatelessWidget {
                           ),
                         ),
                       ],
-                    ),
-                    // Positioned(
-                    //   left: 118,
-                    //   child: Transform.rotate(
-                    //     angle: -6.2,
-                    //     child: Image.network(
-                    //       categories[index].icon,
-                    //       width: 50.w,
-                    //       height: 50.h,
-                    //     ),
-                    //   ),
-                    // ),
+                    )
                   ],
                 ),
               ),
@@ -98,7 +87,7 @@ class HomeViewCategoriesContainer extends StatelessWidget {
               width: 335.w,
               height: 44.h,
               decoration: BoxDecoration(
-                color: Color(0x0ffbf2f4),
+                color: Color(0x0fff5365),
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Row(
@@ -112,7 +101,7 @@ class HomeViewCategoriesContainer extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 14.w),
-                  SvgPicture.asset("assets/icons/arrow-right.svg"),
+                  SvgPicture.asset("assets/arrow.svg"),
                 ],
               ),
             ),

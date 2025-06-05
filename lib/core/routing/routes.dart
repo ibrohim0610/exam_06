@@ -6,4 +6,5 @@ class Routes{
   static const phoneNumber = "/phone_number";
   static const password = "/password";
   static const home = "/home";
+  static const course = '/course';
 }

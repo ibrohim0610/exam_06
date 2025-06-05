@@ -4,8 +4,10 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
 
-  const HomeAppBar({super.key})
+
+  const HomeAppBar({super.key, required this.title})
       : preferredSize = const Size.fromHeight(110);
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Salom, Mohinur 🌸',
+              title,
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 18,

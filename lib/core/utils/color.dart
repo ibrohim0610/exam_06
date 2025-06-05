@@ -15,5 +15,7 @@ class AppColors {
 
   static final primary200 = Color(0xFFF5365C).withValues(alpha: 0.1);
   static const defaultColor = Color(0xFF172B4D);
+  static const textColor = Color(0xFF8898AA);
+  static const mainColor = Color(0xFFE51E6B);
 
 }
